@@ -1,72 +1,139 @@
-<!doctype html>
-<html>
-<head>
-<script type="text/javascript" src="qrc:///js/jquery.js"></script>
-<script type="text/javascript" src="qrc:///js/ign.js"></script>
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<script type="text/javascript">
+<!DOCTYPE html>
+<html><head>
+  
+  <script type="text/javascript" src="qrc:///js/jquery.js"></script>
+  <script type="text/javascript" src="qrc:///js/ign.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript">
 	ign.widgetSizeMin(800,760)
 	ign.widgetSizeMax(800,760);
-	/*$(function(){
-		document.write("hello world");
-	})*/
-	
-</script>
-<script type="text/javascript">
+  </script>
+  
+  <script type="text/javascript">
 	$(document).ready(function() {
-		$("#foto1").hover(function() {
+	$("#foto1").animate({opacity:'0.5'});	
+	$("#foto2").animate({opacity:'0.5'});
+	$("#foto3").animate({opacity:'0.5'});	
+	$("#foto4").animate({opacity:'0.5'});
+	$("#foto5").animate({opacity:'0.5'});
+	$("#foto6").animate({opacity:'0.5'});
+	});
+	
+	$(document).ready(function() {
+		$("#foto1").mouseenter(function() {
+			$("#foto1").animate({opacity:'1'});
 			$("#biodata").load("data/arifbudiman.txt");
+			});
+		$("#foto1").mouseleave(function() {
+		$("#foto1").animate({opacity:'0.5'});
+		$("#biodata").html("<b></b>");
 		});
+             
 	});
 
 $(document).ready(function() {
-		$("#foto2").hover(function() {
+		$("#foto2").mouseenter(function() {
+			$("#foto2").animate({opacity:'1'});
 			$("#biodata").load("data/arifeko.txt");
+		});
+		$("#foto2").mouseleave(function() {
+			$("#foto2").animate({opacity:'0.5'});
+			$("#biodata").html("<b></b>");
 		});
 	});
 			
 $(document).ready(function() {
-		$("#foto3").hover(function() {
+		$("#foto3").mouseenter(function() {
+			$("#foto3").animate({opacity:'1'});
 			$("#biodata").load("data/anang_s.txt");
 		});
+		$("#foto3").mouseleave(function() {
+			$("#foto3").animate({opacity:'0.5'});
+			$("#biodata").html("<b></b>");
+		});
+		
 	});
 $(document).ready(function() {
-		$("#foto4").hover(function() {
+		$("#foto4").mouseenter(function() {
+			$("#foto4").animate({opacity:'1'});
 			$("#biodata").load("data/happy_i.txt");
 		});
+		$("#foto4").mouseleave(function() {
+			$("#foto4").animate({opacity:'0.5'});
+			$("#biodata").html("<b></b>");
+		});
 	});
 $(document).ready(function() {
-		$("#foto5").hover(function() {
+		$("#foto5").mouseenter(function() {
+			$("#foto5").animate({opacity:'1'});
 			$("#biodata").load("data/ibnu_y.txt");
 		});
-	});
-$(document).ready(function() {
-		$("#foto6").hover(function() {
-			$("#biodata").load("data/suryana_h.txt");
+		$("#foto5").mouseleave(function() {
+			$("#foto5").animate({opacity:'0.5'});
+			$("#biodata").html("<b></b>");
 		});
 	});
-	
-
+$(document).ready(function() {
+		$("#foto6").mouseenter(function() {
+			$("#foto6").animate({opacity:'1'});
+			$("#biodata").load("data/suryana_h.txt");
+		});
+		$("#foto6").mouseleave(function() {
+			$("#foto6").animate({opacity:'0.5'});
+			$("#biodata").html("<b></b>");
+		});
+		
+	});
 </script>
+<title></title>
 </head>
 <body>
-	<p><b><center>Dokumentasi Team  Pengembang   IGNSDK</center></b></p>
+<p>
+<b>
+<center>Dokumentasi Team Pengembang IGNSDK</center>
+</b></p>
 
 <div id="halamanutama">
+<table>
+  <tbody>
+    <tr>
+      <td>
+      <div id="foto1"><a href=""><img src="image/arif-budiman.jpg" height="200" width="150"></a></div>
+      </td>
+      <td id="tabel">
+      <div id="foto4"><a href="AAA"><img src="image/happy-i.jpg" height="200" width="150"></a></div>
+      </td>
+    </tr>
+    <tr>
+      <td id="tabel">
+      <div id="foto2"><a href="AAA"><img src="image/arifeko.jpg" height="200" width="150" onclick=""></a></div>
+      </td>
+      <td id="tabel">
+      <div id="foto5"><a href="AAA"><img src="image/ibnu-y.jpg" height="200" width="150"></a></div>
+      </td>
+    </tr>
+    <tr>
+      <td id="tabel">
+      <div id="foto3"><a href="AAA"><img src="image/anang-s.jpg" height="200" width="150"></a></div>
+      </td>
+      <td id="tabel">
+      <div id="foto6"><a href="AAA"><img src="image/suryana-h.jpg" height="200" width="150"></a></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
-<table>
-<tr><td id="tabel"><div id="foto1"><a href=""><img src="image/arif-budiman.jpg" width="150px" height="200px"></a></div></td><td id="tabel"><div id="foto4"><a href="AAA"><img src="image/happy-i.jpg" width="150px" height="200px"></a></div></td></tr>
-<tr><td id="tabel"><div id="foto2"><a href="AAA"><img src="image/arifeko.jpg" width="150px" height="200px"></a></div></td><td id="tabel"><div id="foto5"><a href="AAA"><img src="image/ibnu-y.jpg" width="150px" height="200px"></a></div></td></tr>
-<tr><td id="tabel"><div id="foto3"><a href="AAA"><img src="image/anang-s.jpg" width="150px" height="200px"></a></div></td><td id="tabel"><div id="foto6"><a href="AAA"><img src="image/suryana-h.jpg" width="150px" height="200px"></a></div></td></tr>
-</table>
-	
-</div>
 <div id="description">
-	
 <table>
-<tr><td font="arial" >Kontak (Untuk melihat arahkan mouse ke gambar)</td></tr>
+  <tbody>
+    <tr>
+      <td font="arial">Kontak (Untuk melihat arahkan mouse ke gambar)</td>
+    </tr>
+  </tbody>
 </table>
-<div id="biodata"></div>	
+<div id="biodata"></div>
+
 </div>
-</body>
-</html>
+
+</body></html>
