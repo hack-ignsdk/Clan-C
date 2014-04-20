@@ -14,10 +14,12 @@ color: #ffffff;
 float:left;
 width:460px;
 height:650px;
+margin:auto;
 margin-left:10px;
 border-style:solid;
 border-width:2px;
 border-color:#e6e6fa;
+
 
 }
 
@@ -38,13 +40,7 @@ border-style:solid;
 border-color:#800000;
 }
 
-#tabel{
-border:1px;
-border-color:blue;
-width: 200px;
-height:100px
 
-}
 
 #biodata{ 
 font-family: comic sans ms;
@@ -52,3 +48,4 @@ font-size: 18px;
 color: #071585;
 
 }
+
