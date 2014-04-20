@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Dokumentasi  Team Igos Nusantara
+Exec=/usr/bin/ignsdk -p /opt/ignsdk/hackton-Clan-C.ign
+Icon=/opt/ignsdk/hackton-Clan-C.ign/icons/app.png
+Terminal=false
+Type=Application
+Categories=Utility
