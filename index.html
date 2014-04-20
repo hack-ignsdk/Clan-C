@@ -5,8 +5,8 @@
 <script type="text/javascript" src="qrc:///js/ign.js"></script>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script type="text/javascript">
-	ign.widgetSizeMin(800,540)
-	ign.widgetSizeMax(800,540);
+	ign.widgetSizeMin(800,760)
+	ign.widgetSizeMax(800,760);
 	/*$(function(){
 		document.write("hello world");
 	})*/
@@ -14,12 +14,39 @@
 </script>
 <script type="text/javascript">
 	$(document).ready(function() {
-		$("foto").hover(function() {
+		$("#foto1").hover(function() {
+			$("#biodata").load("data/arifbudiman.txt");
+		});
+	});
+
+$(document).ready(function() {
+		$("#foto2").hover(function() {
+			$("#biodata").load("data/arifeko.txt");
+		});
+	});
 			
-		}
-		
-		
-});
+$(document).ready(function() {
+		$("#foto3").hover(function() {
+			$("#biodata").load("data/anang_s.txt");
+		});
+	});
+$(document).ready(function() {
+		$("#foto4").hover(function() {
+			$("#biodata").load("data/happy_i.txt");
+		});
+	});
+$(document).ready(function() {
+		$("#foto5").hover(function() {
+			$("#biodata").load("data/ibnu_y.txt");
+		});
+	});
+$(document).ready(function() {
+		$("#foto6").hover(function() {
+			$("#biodata").load("data/suryana_h.txt");
+		});
+	});
+	
+
 </script>
 </head>
 <body>
@@ -28,16 +55,16 @@
 <div id="halamanutama">
 
 <table>
-<tr><td id="tabel"><div id="foto"><a href="AAA">foto A</a></div></td><td id="tabel"><div id="foto"><a href="AAA">foto D</a></div></td></tr>
-<tr><td id="tabel"><div id="foto"><a href="AAA">foto B</a></div></td><td id="tabel"><div id="foto"><a href="AAA">foto E</a></div></td></tr>
-<tr><td id="tabel"><div id="foto"><a href="AAA">foto C</a></div></td><td id="tabel"><div id="foto"><a href="AAA">foto F</a></div></td></tr>
+<tr><td id="tabel"><div id="foto1"><a href=""><img src="image/arif-budiman.jpg" width="150px" height="200px"></a></div></td><td id="tabel"><div id="foto4"><a href="AAA"><img src="image/happy-i.jpg" width="150px" height="200px"></a></div></td></tr>
+<tr><td id="tabel"><div id="foto2"><a href="AAA"><img src="image/arifeko.jpg" width="150px" height="200px"></a></div></td><td id="tabel"><div id="foto5"><a href="AAA"><img src="image/ibnu-y.jpg" width="150px" height="200px"></a></div></td></tr>
+<tr><td id="tabel"><div id="foto3"><a href="AAA"><img src="image/anang-s.jpg" width="150px" height="200px"></a></div></td><td id="tabel"><div id="foto6"><a href="AAA"><img src="image/suryana-h.jpg" width="150px" height="200px"></a></div></td></tr>
 </table>
 	
 </div>
 <div id="description">
 	
 <table>
-<tr><td>Kontak</td></tr>
+<tr><td font="arial" >Kontak (Untuk melihat arahkan mouse ke gambar)</td></tr>
 </table>
 <div id="biodata"></div>	
 </div>
